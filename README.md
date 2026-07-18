@@ -87,10 +87,11 @@
 
 <div align="center">
 
-![Sumanth's GitHub stats](https://github-readme-stats.vercel.app/api?username=sumanth-kumar-meesala&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&theme=tokyonight)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=sumanth-kumar-meesala&layout=compact&hide_border=true&theme=tokyonight&langs_count=8)
-
-![GitHub Streak](https://streak-stats.demolab.com/?user=sumanth-kumar-meesala&hide_border=true&theme=tokyonight)
+![Stats](./profile-summary-card-output/nightowl/0-profile-details.svg)
+![Repos per Language](./profile-summary-card-output/nightowl/1-repos-per-language.svg)
+![Most Commit Language](./profile-summary-card-output/nightowl/2-most-commit-language.svg)
+![Stats](./profile-summary-card-output/nightowl/3-stats.svg)
+![Productive Time](./profile-summary-card-output/nightowl/4-productive-time.svg)
 
 </div>
 

@@ -1,0 +1,28 @@
+# .github/workflows/profile-summary-cards.yml
+# Generates GitHub stat cards as committed SVGs (no rate-limited external service).
+# After first run, embed the images from profile-summary-card-output/ in your README.
+name: GitHub-Profile-Summary-Cards
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # daily (18:00 UTC ~ morning in Melbourne)
+  workflow_dispatch:        # lets you run it manually from the Actions tab
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write        # needed so the action can commit the generated images
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # built-in token; no PAT required
+        with:
+          USERNAME: sumanth-kumar-meesala
+          BRANCH_NAME: main
+          UTC_OFFSET: 10        # Melbourne (AEST)
